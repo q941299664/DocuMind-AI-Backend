@@ -1,4 +1,4 @@
-package com.documind.system;
+package com.documind.auth;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@ComponentScan(basePackages = {"com.documind.auth", "com.documind.common", "com.documind.system"})
 @MapperScan("com.documind.system.mapper")
-@ComponentScan(basePackages = {"com.documind.system", "com.documind.common"})
-public class SystemApplication {
+public class AuthApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SystemApplication.class, args);
+        SpringApplication.run(AuthApplication.class, args);
     }
 }

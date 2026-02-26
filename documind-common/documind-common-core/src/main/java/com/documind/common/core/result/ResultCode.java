@@ -13,7 +13,12 @@ public enum ResultCode implements IResultCode {
     FAILED(500, "系统内部错误"),
     VALIDATE_FAILED(400, "参数校验失败"),
     UNAUTHORIZED(401, "暂未登录或token已经过期"),
-    FORBIDDEN(403, "没有相关权限");
+    FORBIDDEN(403, "没有相关权限"),
+    
+    // 业务错误码 (1000~9999)
+    USER_NOT_EXIST(1001, "用户不存在"),
+    USER_PASSWORD_ERROR(1002, "用户名或密码错误"),
+    USER_ACCOUNT_LOCKED(1003, "账号已被锁定");
 
     private final Integer code;
     private final String message;

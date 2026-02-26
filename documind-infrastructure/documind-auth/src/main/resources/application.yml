@@ -1,9 +1,9 @@
 server:
-  port: 9201
+  port: 9101
 
 spring:
   application:
-    name: documind-system
+    name: documind-auth
   profiles:
     active: dev
   cloud:
@@ -15,4 +15,4 @@ spring:
         file-extension: yaml
   config:
     import:
-      - optional:nacos:documind-system.yaml
+      - optional:nacos:documind-auth.yaml

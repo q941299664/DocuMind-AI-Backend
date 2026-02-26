@@ -1,9 +1,9 @@
 server:
-  port: 9201
+  port: 8080
 
 spring:
   application:
-    name: documind-system
+    name: documind-gateway
   profiles:
     active: dev
   cloud:
@@ -15,4 +15,4 @@ spring:
         file-extension: yaml
   config:
     import:
-      - optional:nacos:documind-system.yaml
+      - optional:nacos:documind-gateway.yaml

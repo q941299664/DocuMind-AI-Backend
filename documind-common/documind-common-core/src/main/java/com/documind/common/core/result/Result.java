@@ -38,6 +38,10 @@ public class Result<T> implements Serializable {
         return new Result<>(resultCode.getCode(), resultCode.getMessage(), null);
     }
 
+    public static <T> Result<T> failed(Integer code, String message) {
+        return new Result<>(code, message, null);
+    }
+
     public Integer getCode() {
         return code;
     }
