@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>documind-backend</artifactId>
+        <groupId>com.documind</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>documind-common</artifactId>
+    <packaging>pom</packaging>
+    <description>通用模块聚合</description>
+
+    <modules>
+        <module>documind-common-core</module>
+        <module>documind-common-web</module>
+        <module>documind-common-database</module>
+        <module>documind-common-redis</module>
+        <module>documind-common-security</module>
+        <module>documind-common-swagger</module>
+    </modules>
+
+</project>
