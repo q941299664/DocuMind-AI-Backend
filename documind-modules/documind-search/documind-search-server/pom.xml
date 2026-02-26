@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.documind</groupId>
+        <artifactId>documind-search</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>documind-search-server</artifactId>
+    <description>DocuMind-AI 搜索模块-启动服务</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-search-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-common-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-common-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-common-swagger</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+
+
