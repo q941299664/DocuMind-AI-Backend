@@ -19,7 +19,6 @@
         <module>documind-common-database</module>
         <module>documind-common-redis</module>
         <module>documind-common-security</module>
-        <module>documind-common-swagger</module>
     </modules>
 
 </project>

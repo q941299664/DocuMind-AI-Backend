@@ -77,11 +77,6 @@
                 <artifactId>documind-common-security</artifactId>
                 <version>${documind.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.documind</groupId>
-                <artifactId>documind-common-swagger</artifactId>
-                <version>${documind.version}</version>
-            </dependency>
 
             <!-- DocuMind API Modules -->
             <dependency>

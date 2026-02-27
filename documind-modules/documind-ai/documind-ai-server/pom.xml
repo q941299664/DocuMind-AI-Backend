@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -15,8 +15,15 @@
     <dependencies>
         <dependency>
             <groupId>com.documind</groupId>
-            <artifactId>documind-ai-service</artifactId>
-            <version>${project.version}</version>
+            <artifactId>documind-ai-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-common-database</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-common-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>com.documind</groupId>
@@ -26,18 +33,26 @@
             <groupId>com.documind</groupId>
             <artifactId>documind-common-security</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.documind</groupId>
-            <artifactId>documind-common-swagger</artifactId>
-        </dependency>
         
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

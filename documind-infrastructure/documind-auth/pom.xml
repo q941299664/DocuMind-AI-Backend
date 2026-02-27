@@ -24,11 +24,21 @@
             <groupId>com.documind</groupId>
             <artifactId>documind-common-web</artifactId>
         </dependency>
+
+        <!-- Common Web -->
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-common-core</artifactId>
+        </dependency>
         
         <!-- Common Redis -->
         <dependency>
             <groupId>com.documind</groupId>
             <artifactId>documind-common-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.documind</groupId>
+            <artifactId>documind-system-api</artifactId>
         </dependency>
 
         <!-- Nacos Discovery -->
